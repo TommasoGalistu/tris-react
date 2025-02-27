@@ -22,11 +22,11 @@ Un semplice gioco del Tris sviluppato con React, che permette ai giocatori di in
 
 git clone https://github.com/TommasoGalistu/tris-react.git
 
-cd tris-react
+    cd tris-react
 
 Installa le dipendenze
 
-npm install
+    npm install
 
 Avvia l'applicazione
 
