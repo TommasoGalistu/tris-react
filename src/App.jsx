@@ -27,6 +27,7 @@ function App() {
 
   const activePlayer = deriveActivePlayer(gameTurns);
   let gameBoard = [...initialGameboard.map(array => [...array])];
+  
   for(const turn of gameTurns){
       const {square, player} = turn;
       const {row, col} = square;
@@ -44,7 +45,8 @@ function App() {
     }
   }
 
-  const hasDraw = gameBoard.length === 9 && !winner
+  const hasDraw = gameTurns.length >= 9 && !winner
+  console.log(gameTurns.length)
   function handleSelectSquare(rowIndex, colIndex){
     setGameTurns(prevTurns => {
       const currentPlayer = deriveActivePlayer(prevTurns)
@@ -60,7 +62,7 @@ function App() {
   }
 
   function handlePlayerNameChange(symbol, newName){
-    setPlayerName(prevPlayers => {
+    setPlayers(prevPlayers => {
         return {
             ...prevPlayers,
             [symbol]: newName
