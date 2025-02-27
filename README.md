@@ -21,6 +21,7 @@ Un semplice gioco del Tris sviluppato con React, che permette ai giocatori di in
     Clona il repository
 
 git clone https://github.com/TommasoGalistu/tris-react.git
+
 cd tris-react
 
 Installa le dipendenze
